@@ -1,0 +1,24 @@
+{
+  "source_rows": 15,
+  "kept_after_dedupe": 14,
+  "sampled": 8,
+  "intent_distribution": {
+    "account": 2,
+    "agent_tool": 2,
+    "billing": 1,
+    "policy": 1,
+    "refund": 1,
+    "troubleshooting": 1
+  },
+  "with_contexts": 8,
+  "with_tool_calls": 2,
+  "mean_question_tokens": 3.2,
+  "pii_masked_patterns": [
+    "EMAIL",
+    "PHONE",
+    "CN_ID",
+    "CARD",
+    "IP"
+  ],
+  "seed": 20260927
+}

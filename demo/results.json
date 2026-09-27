@@ -1,0 +1,413 @@
+{
+  "generated_by": "eval_runner.py (heuristic baseline, no LLM calls)",
+  "samples_file": "samples.jsonl",
+  "aggregate": {
+    "faithfulness": 0.625,
+    "faithfulness_n": 12,
+    "context_precision": 0.1667,
+    "context_precision_n": 12,
+    "context_recall": 0.7222,
+    "context_recall_n": 12,
+    "answer_correctness": 0.6806,
+    "answer_correctness_n": 12,
+    "citation_validity": 0.9583,
+    "citation_validity_n": 12,
+    "tool_arg_validity": 0.6667,
+    "tool_arg_validity_n": 3,
+    "p50_latency_ms": 1300.0,
+    "p95_latency_ms": 3200.0,
+    "mean_tokens_per_sample": 1145.0,
+    "tool_calls_total": 4,
+    "tool_calls_missing_args": 1,
+    "tool_calls_duplicate": 1,
+    "samples": 12
+  },
+  "gates": [
+    {
+      "metric": "faithfulness",
+      "value": 0.625,
+      "limit": 0.85,
+      "status": "FAIL"
+    },
+    {
+      "metric": "context_precision",
+      "value": 0.1667,
+      "limit": 0.5,
+      "status": "FAIL"
+    },
+    {
+      "metric": "context_recall",
+      "value": 0.7222,
+      "limit": 0.8,
+      "status": "FAIL"
+    },
+    {
+      "metric": "answer_correctness",
+      "value": 0.6806,
+      "limit": 0.8,
+      "status": "FAIL"
+    },
+    {
+      "metric": "citation_validity",
+      "value": 0.9583,
+      "limit": 1.0,
+      "status": "FAIL"
+    },
+    {
+      "metric": "tool_arg_validity",
+      "value": 0.6667,
+      "limit": 0.98,
+      "status": "FAIL"
+    },
+    {
+      "metric": "p95_latency_ms",
+      "value": 3200.0,
+      "limit": 8000,
+      "status": "pass"
+    }
+  ],
+  "per_sample": [
+    {
+      "id": "d001",
+      "intent": "billing",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": []
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 1
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "answer_correctness": 1.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d002",
+      "intent": "billing",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": []
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 1.0,
+      "context_precision": 0.0,
+      "context_recall": 1.0,
+      "answer_correctness": 1.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d003",
+      "intent": "refund",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": [
+            "Yes, you can get a full refund within 60 days of purchase."
+          ]
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 1.0,
+      "answer_correctness": 0.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d004",
+      "intent": "refund",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": []
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 2,
+          "dangling": [
+            "c99"
+          ]
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 1.0,
+      "context_precision": 0.0,
+      "context_recall": 1.0,
+      "answer_correctness": 1.0,
+      "citation_validity": 0.5,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d005",
+      "intent": "account",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": []
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 1.0,
+      "context_precision": 0.0,
+      "context_recall": 1.0,
+      "answer_correctness": 1.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d006",
+      "intent": "account",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": []
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 1
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 1.0,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "answer_correctness": 0.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d007",
+      "intent": "agent_tool",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": [
+            "Order 12345 shipped yesterday and will arrive in 2 days."
+          ]
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 1,
+          "missing_required_args": 0,
+          "duplicate_calls": 0
+        }
+      },
+      "faithfulness": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.5,
+      "answer_correctness": 0.5,
+      "citation_validity": 1.0,
+      "tool_arg_validity": 1.0
+    },
+    {
+      "id": "d008",
+      "intent": "agent_tool",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": [
+            "Order 99999 is delayed by the carrier."
+          ]
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 1,
+          "missing_required_args": 1,
+          "duplicate_calls": 0
+        }
+      },
+      "faithfulness": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "answer_correctness": 0.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": 0.0
+    },
+    {
+      "id": "d009",
+      "intent": "agent_tool",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": [
+            "Order 55555 has been cancelled and the refund was issued."
+          ]
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 2,
+          "missing_required_args": 0,
+          "duplicate_calls": 1
+        }
+      },
+      "faithfulness": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "answer_correctness": 1.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": 1.0
+    },
+    {
+      "id": "d010",
+      "intent": "policy",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": []
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 1.0,
+      "context_precision": 0.0,
+      "context_recall": 1.0,
+      "answer_correctness": 1.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d011",
+      "intent": "policy",
+      "detail": {
+        "faithfulness": {
+          "sentences": 1,
+          "unsupported": []
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 1.0,
+      "context_precision": 0.0,
+      "context_recall": 0.6666666666666666,
+      "answer_correctness": 0.6666666666666666,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    },
+    {
+      "id": "d012",
+      "intent": "troubleshooting",
+      "detail": {
+        "faithfulness": {
+          "sentences": 2,
+          "unsupported": [
+            "Large exports time out;"
+          ]
+        },
+        "context_precision": {
+          "retrieved": 1,
+          "relevant": 0
+        },
+        "citation_validity": {
+          "citations": 1,
+          "dangling": []
+        },
+        "tool_arg_validity": {
+          "calls": 0
+        }
+      },
+      "faithfulness": 0.5,
+      "context_precision": 0.0,
+      "context_recall": 0.5,
+      "answer_correctness": 1.0,
+      "citation_validity": 1.0,
+      "tool_arg_validity": null
+    }
+  ]
+}

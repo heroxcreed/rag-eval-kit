@@ -1,0 +1,9 @@
+{
+  "faithfulness": 0.85,
+  "context_precision": 0.5,
+  "context_recall": 0.8,
+  "answer_correctness": 0.8,
+  "citation_validity": 1.0,
+  "tool_arg_validity": 0.98,
+  "p95_latency_ms": 8000
+}
