@@ -2,7 +2,7 @@
 
 > **Need a reliability checkup for your RAG / AI-agent system?** I do fixed-scope,
 > email-based reliability audits — no calls, no meetings.
-> Contact: **heroxcreed275@gmail.com**
+> Contact: **heroxcreed861@gmail.com**
 
 A zero-dependency evaluation pipeline for RAG and tool-using agent systems:
 sample → baseline metrics → quality gates → client-readable report.
